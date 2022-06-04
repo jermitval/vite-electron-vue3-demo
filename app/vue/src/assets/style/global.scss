@@ -1,0 +1,12 @@
+// 根样式
+@import "./root";
+
+// 标签属性样式
+@import "./attr";
+
+// 混入样式
+@import "./mixin";
+
+// 插件依赖样式
+@import "./nprogress";
+@import "./element-plus";

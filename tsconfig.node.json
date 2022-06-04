@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "app/electron/vite.config.ts",
+    "app/vue/vite.config.ts",
+    "app/config.ts"
+  ]
+}

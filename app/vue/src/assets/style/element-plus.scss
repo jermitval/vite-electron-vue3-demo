@@ -1,0 +1,15 @@
+.el-loading-spinner .path {
+  stroke: $-gl-color-orange !important;
+}
+
+.el-loading-mask {
+  .el-loading-spinner .circular {
+    width: 50%;
+  }
+}
+
+.el-form.custom {
+  .el-form-item__label {
+    height: 21px;
+  }
+}

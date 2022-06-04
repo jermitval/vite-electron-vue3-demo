@@ -1,0 +1,92 @@
+:root {
+  --gl-color-text: #3c3c3c;
+  --gl-color-subtext: #424242;
+  --gl-color-bg: #fff;
+  --gl-color-bg-hover: #fafafa;
+  --gl-color-bg-block: #f4f4f4;
+  --gl-color-bg-block-hover: #e7e5e5;
+  --gl-color-border: #d5d5d5;
+  --gl-color-border-hover: #dedede;
+  --gl-color-lowkey: #969696;
+  --gl-color-lowkey-hover: #818181;
+
+  --el-color-primary: #00c250 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --gl-color-text: #ffffff;
+    --gl-color-subtext: #f1f1f1;
+    --gl-color-bg: #0e0e0e;
+    --gl-color-bg-hover: #1f1f1f;
+    --gl-color-bg-block: #363636;
+    --gl-color-bg-block-hover: #303030;
+    --gl-color-border: #252525;
+    --gl-color-border-hover: #1b1a1a;
+    --gl-color-lowkey: #888888;
+    --gl-color-lowkey-hover: #6e6e6e;
+  }
+}
+
+:root {
+  background: var(--gl-color-bg);
+  color: var(--gl-color-text);
+  font-size: 15px;
+}
+
+$-gl-color-bg: var(--gl-color-bg);
+$-gl-color-bg-hover: var(--gl-color-bg-hover);
+$-gl-color-bg-block: var(--gl-color-bg-block);
+$-gl-color-bg-block-hover: var(--gl-color-bg-block-hover);
+$-gl-color-text: var(--gl-color-text);
+$-gl-color-subtext: var(--gl-color-subtext);
+$-gl-color-border: var(--gl-color-border);
+$-gl-color-border-hover: var(--gl-color-border-hover);
+$-gl-color-lowkey: var(--gl-color-lowkey);
+$-gl-color-lowkey-hover: var(--gl-color-lowkey-hover);
+
+$-gl-border: 1px solid var(--gl-color-border);
+
+$-gl-color-white: #fff;
+$-gl-color-white-dark: #f2f2f2;
+$-gl-color-grey: #f5f5f5;
+$-gl-color-grey-hover: #fafafa;
+$-gl-color-grey-active: #efefef;
+$-gl-color-grey-light: #f9f9f9;
+$-gl-color-grey-dark: #ebebeb;
+$-gl-color-black: #3c3c3c;
+$-gl-color-black-light: #6f6f6f;
+$-gl-color-black-dark: #3e3e3e;
+
+$-gl-color-red: #e6121d;
+$-gl-color-red-hover: #f3323b;
+$-gl-color-red-active: #d40e18;
+$-gl-color-green: #00c250;
+$-gl-color-green-hover: #15db68;
+$-gl-color-green-active: #00b14a;
+$-gl-color-blue: #409eff;
+$-gl-color-blue-hover: #68b2fd;
+$-gl-color-blue-active: #2f7dd6;
+$-gl-color-orange: #ea9e35;
+$-gl-color-orange-hover: #fdbd64;
+$-gl-color-orange-active: #b9710d;
+
+$-size-text-es: 11px;
+$-size-text-s: 13px;
+$-size-text-n: 14px;
+$-size-text: 15px;
+$-size-text-b: 17px;
+$-size-text-eb: 20px;
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow: hidden !important;
+}

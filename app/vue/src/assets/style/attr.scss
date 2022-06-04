@@ -1,0 +1,92 @@
+// 禁止选中
+[unselectable] {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10+ and Edge */
+  user-select: none; /* Standard syntax */
+}
+// 允许选中
+[selectable] {
+  -webkit-touch-callout: auto;
+  user-select: auto;
+}
+// 禁止拖拽
+[undraggable] {
+  -webkit-user-drag: none;
+}
+// 禁止字体缩放
+[unadjust] {
+  -webkit-text-size-adjust: none;
+}
+// 封面
+[cover] {
+  object-fit: cover;
+}
+// 适应
+[contain] {
+  object-fit: contain;
+}
+// 填充
+[fill] {
+  object-fit: fill;
+}
+// 比例
+[scale-down] {
+  object-fit: scale-down;
+}
+// 无交互响应
+[noreact] {
+  pointer-events: none;
+}
+// 输入框取消选中边框
+[input-border-none] {
+  outline-width: 0px;
+}
+// 弹性布局
+[flex] {
+  display: flex;
+}
+// 内嵌滚动
+[scrollable] {
+  overflow-x: hidden;
+  overflow-y: overlay;
+  box-sizing: border-box;
+  &[widebar]::-webkit-scrollbar {
+    width: 12px;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+    width: 8px;
+  }
+  &:hover {
+    &::-webkit-scrollbar {
+      display: block;
+    }
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $-gl-color-border-hover;
+    border: $-gl-border;
+    border-right: none;
+    &:hover {
+      background: $-gl-color-border;
+    }
+  }
+  &::-webkit-scrollbar-track {
+    background: $-gl-color-bg-block;
+  }
+
+  &[light]::-webkit-scrollbar-track {
+    background: $-gl-color-bg-block;
+  }
+  &[dark]::-webkit-scrollbar-track {
+    background: $-gl-color-bg-block;
+  }
+}
+// 应用拖拽区域
+[app-drag] {
+  -webkit-app-region: drag;
+}
+// 应用不可拖拽区域
+[app-no-drag] {
+  -webkit-app-region: no-drag;
+}

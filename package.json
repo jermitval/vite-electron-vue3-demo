@@ -1,0 +1,41 @@
+{
+  "name": "xmind.demo",
+  "private": true,
+  "version": "0.0.1",
+  "description": "description",
+  "author": "Li YiQuan",
+  "license": "ISC",
+  "main": "./dist.electron/main.cjs",
+  "type": "module",
+  "scripts": {
+    "start": "vite --host --config app/vue/vite.config.ts",
+    "app": "ts-node scripts/watch.cjs",
+    "build:v": "vite build --mode production --config app/vue/vite.config.ts",
+    "build:e": "node scripts/build.cjs && electron-builder --config scripts/build.config.cjs",
+    "build": "npm run build:v && npm run build:e",
+    "tsc": "tsc --noEmit"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dayjs": "^1.11.2",
+    "electron-packager": "^15.5.1",
+    "electron-updater": "^5.0.1",
+    "element-plus": "^2.2.2",
+    "nprogress": "^0.2.0",
+    "vue": "^3.2.36",
+    "vue-router": "^4.0.15",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.182",
+    "@types/nprogress": "^0.2.0",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "electron": "17.1.2",
+    "electron-builder": "^23.0.3",
+    "sass": "^1.52.1",
+    "ts-node": "^10.8.0",
+    "typescript": "^4.7.2",
+    "vite": "^2.9.9",
+    "vue-tsc": "^0.35.0"
+  }
+}

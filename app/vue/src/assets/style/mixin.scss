@@ -1,0 +1,57 @@
+@mixin mx-transition(
+  $property: all,
+  $duration: 0.3s,
+  $fuction: ease,
+  $delay: 0s
+) {
+  transition: $property $duration $fuction $delay;
+}
+@mixin mx-flex(
+  $flex-flow: unset,
+  $align-items: unset,
+  $justify-content: unset
+) {
+  display: flex;
+  flex-flow: $flex-flow;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+@mixin mx-2dsize($width: unset, $height: unset) {
+  width: $width;
+  height: $height;
+}
+@mixin mx-position(
+  $position: relative,
+  $top: unset,
+  $right: unset,
+  $bottom: unset,
+  $left: unset,
+  $index: unset
+) {
+  position: $position;
+  top: $top;
+  left: $left;
+  bottom: $bottom;
+  right: $right;
+  index: $index;
+}
+@mixin mx-border(
+  $border-top: unset,
+  $border-right: unset,
+  $border-bottom: unset,
+  $border-left: unset
+) {
+  border-top: $border-top;
+  border-right: $border-right;
+  border-bottom: $border-bottom;
+  border-left: $border-left;
+}
+@mixin mx-display($opacity: 0, $pointer-events: none) {
+  opacity: $opacity;
+  @if $opacity == 0 {
+    visibility: hidden;
+  } @else {
+    visibility: visible;
+  }
+  pointer-events: $pointer-events;
+}

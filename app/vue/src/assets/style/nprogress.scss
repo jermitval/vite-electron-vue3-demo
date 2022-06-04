@@ -1,0 +1,12 @@
+#nprogress {
+  .bar {
+    height: 1px !important;
+    background: $-gl-color-orange !important;
+    .peg {
+      box-shadow: 0 0 10px $-gl-color-orange, 0 0 5px $-gl-color-orange !important;
+    }
+  }
+  .spinner {
+    display: none !important;
+  }
+}
