@@ -18,6 +18,10 @@ npm run app # 运行 electron 需新开另一个终端执行
 
 请确保端口 3000 未被占用。
 
+### 预览
+
+![preview.gif](https://github.com/jermitval/Vite-Electron-Vue3-Demo/blob/master/resources/preview.gif)
+
 ### 远程岗位的附加需求答案
 
 1. 项目需求是以网页的形式呈现，数据源为 csv，由于岗位需求中有提到 Electron，第一时间想到使用 node fs 接口模拟请求 curd 操作。
