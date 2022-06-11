@@ -1,31 +1,18 @@
-### 操作系统
+Template of `Electron` + `Vue3` + `Vite`.
 
-macOS 12.4
-
-### 运行环境
-
+### Use
 Node.js 14+
-
-### 使用方法
 
 ```bash
 npm i
-npm start # 运行 vue
-npm run app # 运行 electron 需新开另一个终端执行
+npm start # run vue
+npm run app # run electron with other terminal
 ```
 
-### 注意事项
+### Notice
 
-请确保端口 3000 未被占用。
+Make sure port 3000 (vue host) unoccupied。
 
-### 预览
+### Preview
 
-![preview.gif](https://github.com/jermitval/vite-electron-vue3-demo/blob/master/resources/preview.gif)
-
-### 远程岗位的附加需求答案
-
-1. 项目需求是以网页的形式呈现，数据源为 csv，由于岗位需求中有提到 Electron，第一时间想到使用 node fs 接口模拟请求 curd 操作。
-2. 列表形式呈现账单内容，并可根据条件统计分类下总金额并排序，且分类可筛选，从而决定分类也以列表的形式呈现，这样页面以左右分布的结构比较直观。由于还存在筛选过滤、新增操作的功能，那么还需要一个顶栏来放置按钮和下拉框。
-3. 月份可筛选，账单分类可筛选。
-   1. 通常情况，应该是年月一起筛选，不知是否编辑人失误，也猜测可能数据源只有同一年份的账单，但之后想起新增账单会出现今年的数据，那么只筛查月份会使列表数据混杂，考虑到可能是考核需要，或其他原因，最终决定以文档为准。
-   2. 需求文档中账单分类并不是必选，考虑到不符合现实情况，所以决定以必选逻辑进行开发。
+![preview.gif](https://github.com/jermitval/vite-electron-vue3-demo/blob/master/resources/preview.gif
