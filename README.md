@@ -20,7 +20,7 @@ npm run app # 运行 electron 需新开另一个终端执行
 
 ### 预览
 
-![preview.gif](https://github.com/jermitval/Vite-Electron-Vue3-Demo/blob/master/resources/preview.gif)
+![preview.gif](https://github.com/jermitval/vite-electron-vue3-demo/blob/master/resources/preview.gif)
 
 ### 远程岗位的附加需求答案
 
