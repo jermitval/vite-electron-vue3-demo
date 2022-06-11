@@ -15,4 +15,4 @@ Make sure port 3000 (vue host) unoccupied。
 
 ### Preview
 
-![preview.gif](https://github.com/jermitval/vite-electron-vue3-demo/blob/master/resources/preview.gif
+![preview.gif](https://github.com/jermitval/vite-electron-vue3-demo/blob/master/resources/preview.gif)
